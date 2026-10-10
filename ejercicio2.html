@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Temperatura</title>
+  <link rel="stylesheet" href="css.styles/styles.css">
+  <script src="js/scrips.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Mi Portal Web</h2>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="ejercicio1.html">Calculadora de Edad</a>
+      <a href="ejercicio2.html" class="active">Convertidor Temp</a>
+      <a href="ejercicio3.html">Lista de Tareas</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>Convertidor de Temperatura</h2>
+    <p>Ingrese la temperatura, seleccione unidades y convierta:</p>
+    <div class="form-row">
+      <input type="number" id="temp-val" placeholder="0.00" oninput="checkTempForm()">
+      <select id="unit-from" onchange="checkTempForm()">
+        <option value="">De...</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+      <select id="unit-to" onchange="checkTempForm()">
+        <option value="">A...</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+      <button id="convert-btn" disabled onclick="convertTemp()">Convertir</button>
+    </div>
+    <p id="temp-result" class="result-text"></p>
+  </main>
+
+</body>
+</html>

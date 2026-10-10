@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Edad</title>
+  <link rel="stylesheet" href="css.styles/styles.css">
+  <script src="js/scrips.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Mi Portal Web jocelyn hernandez morales</h2>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="ejercicio1.html" class="active">Calculadora de Edad</a>
+      <a href="ejercicio2.html">Convertidor Temp</a>
+      <a href="ejercicio3.html">Lista de Tareas</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>Calculadora de Edad</h2>
+    <p>Ingrese su fecha de nacimiento:</p>
+    <div class="form-row">
+      <input type="text" id="birth-date" placeholder="21/11/2002">
+      <button onclick="calculateAge()">Calcular</button>
+    </div>
+    <p id="age-result" class="result-text"></p>
+  </main>
+
+</body>
+</html>
